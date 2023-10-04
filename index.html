@@ -25,6 +25,11 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
@@ -78,10 +83,10 @@
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
                 <h1>Design Your Bags as You Wish</h1>
-                <h2>We are team of talented designers making bags with Customization</h2>
-            <div class="d-flex justify-content-center justify-content-lg-start">
+                <h2>We are team of talented designers making bags with Customisation</h2>
+            <div class="d-flex justify-content-center justify-content-lg-start" style="padding-left: 5px;">
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            </div>
+            </div>          
             </div>
             
         </div>
@@ -94,16 +99,16 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Bag Selection</h2>
+        <h2>Bag Design</h2>
       </div>
 
-      <div class="row content">
+      <div class="row content" style="text-align: center; color: black;">
         <div class="col-lg-6">
-            <h2>Bag Preview</h2>
+            <h3>Bag Preview</h3>
             <div class="bag-model" id="bag-preview"></div>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0">
-            <h1>Select Bag Color</h1>
+            <h3>Select Bag Color</h3>
             <div class="color-options">
               <table>
                 <tr>
@@ -113,13 +118,13 @@
                 <!-- Add more color options as needed -->
                 </tr>
                 <tr>
-                  <th><div class="color-option" style="background-color: #219C90;"></div></th>
+                <th><div class="color-option" style="background-color: #219C90;"></div></th>
                 <th><div class="color-option" style="background-color: #79AC78;"></div></th>
                 <th><div class="color-option" style="background-color: #D80032;"></div></th>
                 <!-- Add more color options as needed -->
                 </tr>
                 <tr>
-                  <th><div class="color-option" style="background-color: #FF3FA4;"></div></th>
+                <th><div class="color-option" style="background-color: #FF3FA4;"></div></th>
                 <th><div class="color-option" style="background-color: #016A70;"></div></th>
                 <th><div class="color-option" style="background-color: #94A684;"></div></th>
                 <!-- Add more color options as needed -->
@@ -127,10 +132,57 @@
               </table>
         </div>
         <script src="assets/js/script.js"></script>
-    </div>
-
-    </div>
+        </div>
+        <div class="button-container" style="padding-top: 25px;">
+          <a href="#" class="buy-button">Buy Now</a>
+      </div>           
+      </div>
+      </div>
   </section><!-- End About Us Section -->
+
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Gallery</h2>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img src="assets/img/portfolio/portfolio-2.jpg" alt="Image 1"></div>
+        <div class="item"><img src="assets/img/portfolio/portfolio-3.jpg" alt="Image 2"></div>
+        <div class="item"><img src="assets/img/portfolio/portfolio-4.jpg" alt="Image 3"></div>
+        <div class="item"><img src="assets/img/portfolio/portfolio-7.jpg" alt="Image 4"></div>
+        <div class="item"><img src="assets/img/portfolio/portfolio-8.jpg" alt="Image 5"></div>
+        <div class="item"><img src="assets/img/portfolio/portfolio-9.jpg" alt="Image 6"></div>
+      </div>
+    
+      <!-- Add Owl Carousel JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+      <script>
+        $(document).ready(function () {
+          $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 3
+              },
+              1000: {
+                items: 6
+              }
+            }
+          });
+        });
+      </script>
+      </div>
+  </section><!-- End About Us Section -->
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
