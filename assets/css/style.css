@@ -200,7 +200,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: orangered;
+  color: white;
 }
 
 @media (max-width: 991px) {
@@ -220,7 +220,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  background: orangered;
   transition: 0.3s;
   z-index: 999;
 }
@@ -249,19 +249,19 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: black;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #47b2e4;
+  color: orange;
 }
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #37517e;
+  color: orangered;
 }
 
 .navbar-mobile .dropdown ul {
@@ -291,7 +291,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #47b2e4;
+  color: orange;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
